@@ -28,13 +28,27 @@ for(var i=0; i < 4; i++){
 document.getElementById("live-timer").addEventListener("touchstart", function(){
     // To allow touch functionalities ie. for mobiles and tablets.
 
+    console.log(touchTimes,document.getElementsByClassName("start")[0].disabled)
+
     if((touchTimes % 2) == 0)    {
-        startTimer();
+    	if(document.getElementsByClassName("start")[0].disabled == true) {
+    		
+    		touchTimes++
+
+    	} else {
+
+    	touchTimes++;
+        startTimer();	
+    	
+    	}
+    	
+    
     } else {
+        
         stopTimer();
     }
 
-    touchTimes++;
+    //touchTimes++;
 
 })
 
@@ -137,7 +151,9 @@ function stopTimer(){
 
     // This function will act as auxiliary to stop the timer once pressed.
 
+    touchTimes++;
     stopTime = true;
+
 }
 
 
