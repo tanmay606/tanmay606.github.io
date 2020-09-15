@@ -25,7 +25,7 @@ for(var i=0; i < 4; i++){
     })
 }
 
-document.getElementById("pomodoro-function").addEventListener("touchstart", function(){
+document.getElementById("live-timer").addEventListener("touchstart", function(){
     // To allow touch functionalities ie. for mobiles and tablets.
 
     if((touchTimes % 2) == 0)    {
