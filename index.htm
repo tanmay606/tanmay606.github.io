@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+    <title>Pomodaro Timer V2</title>
+</head>
+<body>
+    <div id="pomodoro-timer-container">
+        <div id="title-pomodoro">
+            <h1>
+               Brisk Pomodoro
+            </h1> 
+            
+            <span class="pomodoro-punch">A Simple yet powerful pomodoro productivity enhancer.</span>
+        </div>
+
+        <div id="pomodoro-function">
+            <div id="live-timer">
+                <p>
+                    <span class="live-sec"></span> / <span class="sec-limit"></span>
+
+                    <br>
+                     
+                    <span class="sec-remaining-text">Seconds remaining</span>
+                    
+                    <br>
+                    
+                    <span class="timeleftinMinutes"></span>
+                </p>
+
+
+            </div>
+
+            <input type="number" class="setTimeLimit" placeholder="Custom Time (In minutes)"> 
+            <span class="seperator"> OR </span>
+            <button class="btn  cntrl-btn" value="5">5</button>
+            <button class="btn  cntrl-btn" value="10">10</button>
+            <button class="btn  cntrl-btn" value="25">25</button>
+            <button class="btn  cntrl-btn">30</button>
+            <button class="btn" onclick="setTimeLimit()">SET</button>
+
+            <div id="pomodoro-controls">
+                <button class="btn start" onclick="startTimer()">Start</button>
+                <button class="btn" onclick="stopTimer()">Stop</button>
+                <button class="btn reset-btn" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+
+        <span class="footer">
+            <hr class="seperator">
+            @Tammy Corporation 2020
+        </span>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>

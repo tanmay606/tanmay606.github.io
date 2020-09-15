@@ -1,0 +1,129 @@
+body    {
+
+    background: url("images/4.jpg") no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Lato', sans-serif;
+
+    color:#FFFF;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+
+hr {
+    width: 50%;
+    margin-top: 20%;
+}
+
+
+
+::placeholder {
+    color: black;
+}
+
+div#pomodoro-timer-container{
+
+    border-radius: 1%;
+    display: block;
+    padding: 1%;
+    background: rgba(2, 2, 2, 0.356);
+}
+
+div#pomodaro-function{
+    
+}
+
+span.live-sec {
+    
+    /* Responsible for changing pomodoro timer font. */
+    font-size: 5.5rem;
+
+}
+
+span.sec-remaining-text {
+    /* To style specific "Seconds remaining " text  */
+    font-size: 0.95rem  ;
+}
+
+button.btn {
+
+    /* To style buttons  */
+    margin-top: 5%;
+    background-color: rgba(2, 2, 2, 0.356);
+    border:0px;
+    border-radius: 5%;
+    font-weight: 700;
+    color:#FFFF;
+    padding: 1%;
+}
+
+span.pomodoro-punch {
+
+    /* To style punch line */
+    font-size: small;
+    font-style: italic;
+}
+
+span.footer {
+    /* To style website footer */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45%;
+}
+
+span.seperator {
+
+    /* for general styling.  */
+    display: block;
+}
+
+@media (max-width:768px){
+    
+    /* To handle mobile and tablet resolution devices. */
+    input.setTimeLimit {
+
+        display: block;
+        background-color: white;
+        text-align: center;
+        color: red;
+        opacity: 0.3;
+        border-radius: 2%;
+        border:0px;
+        margin: 10% auto;
+        padding: 2%;
+        width: 40%;
+    }
+
+    body {
+
+        font-size: 1.10rem;
+    }
+}
+
+
+@media (min-width: 769px){
+
+    /* To handle laptop and desktop devices */
+    
+    input.setTimeLimit {
+
+        background-color: white;
+        color: red;
+        opacity: 0.3;
+        border-radius: 2%;
+        text-align: center;
+        border:0px;
+        margin: 0 0 5% 0;
+        padding: 1%;
+        width: 20%;
+    }
+    
+    
+    
+
+}
+
+
