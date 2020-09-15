@@ -88,7 +88,7 @@ document.addEventListener("keydown", function(keyboard){
 
 function changeBackground() {
     // responsible for loading different background image each time web app reloads / loads.
-    var randomNum = Math.round(Math.random() * 10);
+    var randomNum = Math.round(Math.random() * 5);
     if(randomNum != 0){
         var targetImg = randomNum + ".jpg";
     } else {
