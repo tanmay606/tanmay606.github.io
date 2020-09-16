@@ -12,6 +12,18 @@ Features :
 5. Touch control functionality along with Keyboard controls. (For mobiles and tablet devices)
 
 
+[ FOR KEYBOARD CONTROLS ] 
+
+"R" for resetting the timer.
+"SPACEBAR" for pausing your current timer, in case you have emergency.
+"ENTER" for resuming or starting the timer.
+
+[ FOR TOUCH Devices ]
+
+If you're using android device or any kind of touch device then you can play or pause the pomodoro timer by tapping on the timer, one tap for play another one for pause.
+
+
+
 Some shots below : 
 
 ![Image1](https://raw.githubusercontent.com/tanmay606/tanmay606.github.io/master/screenshots/1.png)
