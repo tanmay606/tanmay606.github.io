@@ -1,4 +1,5 @@
 body    {
+    /* responsible for styling body tag. */
 
     background: url("images/4.jpg") no-repeat center center fixed #000; 
     -webkit-background-size: cover;
@@ -13,18 +14,6 @@ body    {
     
 }
 
-hr {
-    width: 50%;
-    margin-top: 10%;
-}
-
-
-
-::placeholder {
-    color: black;
-    text-align: center;
-}
-
 div#pomodoro-timer-container{
     /* parent container of the complete web app. */
 
@@ -35,6 +24,12 @@ div#pomodoro-timer-container{
     background: rgba(0, 0, 0, 0.356);
 }
 
+span.pomodoro-punch {
+
+    /* To style punch line */
+    font-size: small;
+    font-style: italic;
+}
 
 span.live-sec {
     
@@ -45,8 +40,28 @@ span.live-sec {
 
 span.sec-remaining-text {
     /* To style specific "Seconds remaining " text  */
+
     font-size: 0.95rem  ;
 }
+
+
+input.setTimeLimit:hover {
+    /* To set hover opacity for custom input box for every device */
+    opacity: 1;
+}
+
+span.seperator {
+
+    /* for general styling.  */
+    padding-top: 0%;
+    display: block;
+}
+
+
+
+
+
+/* for styling buttons on websites for all devices  */
 
 button.btn {
 
@@ -58,8 +73,10 @@ button.btn {
     border-radius: 5%;
     font-weight: 700;
     color:#FFFF;
-    padding: 1% 2%;
+    padding: 10px 15px;
+    /* padding: 1% 2%; */
 }
+
 
 button.btn:hover {
     
@@ -67,18 +84,8 @@ button.btn:hover {
     background-color: rgba(189, 163, 163, 0.356);;
 }
 
-input.setTimeLimit:hover {
-    /* To set hover opacity for custom input box for every device */
-    opacity: 1;
-}
 
-
-span.pomodoro-punch {
-
-    /* To style punch line */
-    font-size: small;
-    font-style: italic;
-}
+/* Styling last part of the Web App ie. the footer and social media section for all devices  */
 
 span.footer {
     /* To style website footer */
@@ -87,41 +94,82 @@ span.footer {
 }
 
 
-span.seperator {
+hr.seperator {
+    /* for styling horizontal line.  */
 
-    /* for general styling.  */
-    display: block;
-}
-
-li.social-media-icon {
-    padding: 2%;
-    text-decoration: none;
-    display: inline;
+    width: 50%;
+    margin-top: 10%;
 }
 
 i {
+    /* To style font-awesome font */
     color: #ffffff;
 }
 
 i:hover {
+    /* font awesome hover state */
     color: black;
 }
+
+div.social-media-container {
+    display: block;
+    padding: 5%;
+
+}
+
+a.social-media-icon {
+
+    padding: 5%;
+    text-decoration: none; 
+    display: inline;
+}
+
+
+
+
+
+
+/* Below are properties setted in order to make the web application responsive for almost all devices. */
 
 @media (max-width:768px){
     
     /* To handle mobile and tablet resolution devices. */
+
+    ::placeholder {
+        color: #FFFF;
+        text-align: center;
+    }
+
+    div#pomodoro-timer-container{
+        /* parent container of the complete web app. */
+    
+        border-radius: 1%;
+        display: block;
+        padding: 0%;
+        padding-bottom: 9.5%;
+        background: rgba(0, 0, 0, 0.356);
+    }
+
+
+    div#live-timer, div#title-pomodoro, span.seperator , span.footer {
+        user-select: none; /* standerd */
+        -moz-user-select: none; /* firefox specific */
+        -webkit-user-select: none; /* Chrome, Opera and Safari*/
+        -ms-user-select: none; /* IE, ms-edge */		
+    }
+
     input.setTimeLimit {
 
         display: block;
-        background-color: white;
+        background-color: transparent;
         text-align: center;
-        color: black;
+        color: wheat;
         opacity: 0.3;
         border-radius: 2%;
-        border:0px;
+        border:1px solid black;
         margin: 10% auto;
-        padding: 2%;
-        width: 40%;
+        padding: 3%;
+        width: 50%;
     }
 
     button.cntrl-btn {
@@ -136,7 +184,8 @@ i:hover {
         border-radius: 5%;
         font-weight: 700;
         color:#FFFF;
-        padding: 1% 20%;
+        padding: 10px 50px;
+        /* padding: 1% 20%; */
     }
 
     body {
@@ -150,6 +199,12 @@ i:hover {
 
     /* To handle laptop and desktop devices */
     
+
+    ::placeholder {
+        color: black;
+        text-align: center;
+    }
+
     input.setTimeLimit {
 
         background-color: white;
@@ -162,7 +217,20 @@ i:hover {
         padding: 1%;
         width: 20%;
     }
-    
+    button.cntrl-btn {
+
+
+        margin: 3% 1% 0% 1%;
+        background-color: rgba(2, 2, 2, 0.356);
+        border:0px;
+        display: inline-block;
+        margin: 2% auto;
+        border-radius: 5%;
+        font-weight: 700;
+        color:#FFFF;
+        padding: 10px 50px;
+        /* padding: 1% 20%; */
+    }
     
     
 
