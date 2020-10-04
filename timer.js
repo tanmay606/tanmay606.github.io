@@ -72,14 +72,13 @@ document.addEventListener("keydown", function(keyboard){
             
             startTimer();
         }
-        
-    
-    } else if(keyboard.key === " ") {
 
+    } else if(keyboard.key === " ") {
+        
+        keyboard.preventDefault();
         console.log("spaced");
         stopTimer();
     } else {
-
         {}
     }
 })
