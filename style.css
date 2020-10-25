@@ -7,19 +7,17 @@ body    {
     background-size: cover;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Lato', sans-serif;
-    color:#FFFF;
+    color:wheat;
     text-align: center;
     font-size: 1.8rem;
     
 }
 
-div#live-timer {
-    background-color: rgba(2, 2, 2, .100);
-    border-radius: 5%;
-    width: 30%;
-    padding: 15px;
-    margin: 5% auto;
+p.alternative-option-text {
+    font-weight: lighter;
+    font-size: 50%;
 }
+
 
 div#pomodoro-timer-container{
     /* parent container of the complete web app. */
@@ -70,7 +68,7 @@ input.setTimeLimit:hover {
 span.seperator {
 
     /* for general styling.  */
-    padding-top: 0%;
+    padding-top: 5%;
     display: block;
 }
 
@@ -89,7 +87,7 @@ button.btn {
     border:0px;
     border-radius: 5%;
     font-weight: 700;
-    color:#FFFF;
+    color:rgb(201, 185, 185);
     padding: 10px 15px;
     /* padding: 1% 2%; */
 }
@@ -120,7 +118,7 @@ hr.seperator {
 
 i {
     /* To style font-awesome font */
-    color: #ffffff;
+    color:wheat;
 }
 
 i:hover {
@@ -152,8 +150,17 @@ a.social-media-icon {
     
     /* To handle mobile and tablet resolution devices. */
 
+    div#live-timer {
+        background-color: rgba(2, 2, 2, .100);
+        border-radius: 5%;
+        font-weight: lighter;
+        width: 95%;
+        padding: 5px;
+        margin: 10% auto;
+    }
+
     ::placeholder {
-        color: #FFFF;
+        color: wheat;
         text-align: center;
     }
 
@@ -200,7 +207,7 @@ a.social-media-icon {
         margin: 2% auto;
         border-radius: 5%;
         font-weight: 700;
-        color:#FFFF;
+        color:wheat;
         padding: 10px 50px;
         /* padding: 1% 20%; */
     }
@@ -209,13 +216,20 @@ a.social-media-icon {
 
         font-size: 1.10rem;
     }
+
 }
 
 
 @media (min-width: 769px){
 
     /* To handle laptop and desktop devices */
-    
+    div#live-timer {
+        background-color: rgba(2, 2, 2, .100);
+        border-radius: 5%;
+        width: 30%;
+        padding: 15px;
+        margin: 5% auto;
+    }
 
     ::placeholder {
         color: black;
@@ -230,7 +244,7 @@ a.social-media-icon {
         border-radius: 2%;
         text-align: center;
         border:0px;
-        margin: 0 0 5% 0;
+        margin: 5% 0 5% 0;
         padding: 1%;
         width: 20%;
     }

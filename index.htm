@@ -39,19 +39,26 @@
 
             </div>
 
-            <input type="number" class="setTimeLimit" placeholder="Custom Time (In minutes)"> 
+            <div id="pomodoro-controls">
+                <button class="btn start" onclick="startTimer()">Start</button>
+                <button class="btn" onclick="stopTimer()">Stop</button>
+                <button class="btn reset-btn" onclick="resetTimer()">Reset</button>
+            </div>
+
+            
             <span class="seperator"> OR </span>
+            <p class="alternative-option-text">(Set your own custom Time Interval below)</p>
             <button class="cntrl-btn" value="5">05</button>
             <button class="cntrl-btn" value="10">10</button>
             <button class="cntrl-btn" value="25">25</button>
             <button class="cntrl-btn">30</button>
             <button class="cntrl-btn" onclick="setTimeLimit()">SET</button>
 
-            <div id="pomodoro-controls">
-                <button class="btn start" onclick="startTimer()">Start</button>
-                <button class="btn" onclick="stopTimer()">Stop</button>
-                <button class="btn reset-btn" onclick="resetTimer()">Reset</button>
-            </div>
+            <span class="seperator"></span>
+
+            <input type="number" class="setTimeLimit" placeholder="Custom Time (In minutes)"> 
+
+
         </div>
 
         <span class="footer">

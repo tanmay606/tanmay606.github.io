@@ -139,6 +139,7 @@ function resetTimer(){
 
     stopTime = true;
     touchTimes = 0;
+    document.getElementsByClassName("live-sec")[0].style.wordWrap = "break-word";
     document.getElementsByClassName("sec-limit")[0].innerHTML = totalTime; // to reset the value of elapsed time on screen.
     document.getElementsByClassName("live-sec")[0].innerHTML = totalTime; // to reset the value of total time on screen.
     timerLimit = totalTime; // to reset the timer.
