@@ -1,7 +1,7 @@
 A simple and usefull pomodoro timer, Written In Plain JS (Vanilla).
 
 
-Live at https://www.tanmay606.github.io
+Live at http://www.tanmay606.github.io
 
 Features :
 
